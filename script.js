@@ -31,7 +31,9 @@ function generatePassword() {
   var inputUpperCase = confirm(
     "Do you want to include upper case characters in your password? "
   );
-  var inputSymbol = confirm("Do you want to symbols in your password? ");
+  var inputSymbol = confirm(
+    "Do you want to include symbols in your password? "
+  );
   var inputNumbers = confirm(
     "Do you want to include numbers in your password? "
   );
