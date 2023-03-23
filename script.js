@@ -13,6 +13,7 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
+  // Add prompts to get the criteria of what character types the user wants to include
   var length = prompt(
     "Choose a length of at least 8 characters and no more than 128 characters"
   );
@@ -38,6 +39,7 @@ function generatePassword() {
     "Do you want to include numbers in your password? "
   );
 
+  // Add alerts so the user is notified that they need to make a minimum of 1 selection to generate a password
   while (
     inputLowerCase == false &&
     inputUpperCase == false &&
@@ -61,6 +63,7 @@ function generatePassword() {
     );
   }
 
+  // Made a loop and function to include character styles that the user selected, generating an output catered towards their selection
   var lowerCaseList = "abcdefghijklmnopqrstuvwxyz";
   var upperCaseList = lowerCaseList.toUpperCase();
   var symbolList = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
